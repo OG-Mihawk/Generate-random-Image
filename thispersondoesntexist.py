@@ -41,7 +41,7 @@ def random_pic_generator(gender):
 
 
 
-liste = ['female' for i in range(10000)]
+liste = ['male' for i in range(1000)]
 with ThreadPoolExecutor(max_workers=100) as executor:
     executor.map(random_pic_generator, liste)
 
